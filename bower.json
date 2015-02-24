@@ -1,0 +1,13 @@
+{
+  "name": "Ben's Project Template",
+  "version": "1.0.0",
+  "main": "",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "stripe_payments",
+  "description": "Good Done Great Online Payments using Stripe's API",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
