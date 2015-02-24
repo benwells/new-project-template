@@ -4,10 +4,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     connect: {
+      ssl: {
+        options: {
+          port: 8000,
+          hostname: '*',
+          protocol: 'https'
+        }
+      },
       serve: {
         options: {
           port: 8000,
-          hostname: '*'
+          hostname: '*',
+          protocol: 'http'
         }
       }
     },
