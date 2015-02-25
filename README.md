@@ -1,4 +1,4 @@
-# node-project-template
+# new-project-template
 My personal template for new projects.  Designed to get me up and running with new projects quickly.
 
 ## Includes:
