@@ -7,6 +7,12 @@ My personal template for new projects.  Designed to get me up and running with n
  - GruntFile.js
    - livereload (grunt-contrib-connect)
    - watch (grunt-contrib-watch)
+ - Mongo Database (mongoose)
+ - Boilerplate token based authentication API endpoints
+   - signin
+   - signup
+   - list users (for testing protected routes)
+   - signout (manual token expiration)
 
 ### Installation Instructions:
  1. `git clone git@github.com:benwells/node-project-template.git`
