@@ -1,11 +1,26 @@
 {
-  "name": "stripe_payments",
-  "description": "Good Done Great Online Payments using Stripe's API",
+  "name": "NewProjectTemplate",
+  "description": "NewProjectTemplate",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "express": "latest",
+    "morgan": "latest",
+    "body-parser": "latest",
+    "mongoose": "latest",
+    "bcrypt": "latest",
+    "express-jwt": "^3.0.0",
     "grunt": "latest",
     "grunt-contrib-connect": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "jsonwebtoken": "latest",
+    "passport": "latest",
+    "underscore.string": "latest",
+    "express-jwt": "latest"
+  },
+  "devDependencies": {
+    "passport-token-auth": "latest",
+    "underscore.string": "^3.0.3"
   }
 }
