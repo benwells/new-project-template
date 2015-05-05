@@ -100,7 +100,6 @@ router.post('/signup', function(req, res) {
 
 //  POST /api/users/signin
 router.post('/signin', function(req, res) {
-  console.log('email', req.body.email);
   User.findOne({
     email: req.body.email
   }, function(err, user) {
@@ -111,12 +110,14 @@ router.post('/signin', function(req, res) {
       });
     } else {
       if (user) {
-        console.log('user found', user);
         //if password is correct, generate a token
         if (bcrypt.compareSync(req.body.password, user.passwordHash)) {
           var token = jwt.sign(user, req.app.get('superSecret'), {
             expiresInMinutes: 1440 // expires in 24 hours
           });
+
+          var tokenRec = new Token({token: token});
+          tokenRec.save();
 
           res.json({
             "status": true,
